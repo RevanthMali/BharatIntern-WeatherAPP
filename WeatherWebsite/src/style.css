@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+#cityName {
+   color: #484848;
+  background-color: #000;
+  border-radius: 4px;
+  padding-bottom: 2px;
+  box-shadow: 2px 3px 5px rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  transition: 1s linear;
+  margin: auto;
+}
+h1:hover #cityName{
+  color: #fff;
+  text-shadow: 0 0 4px darkorange,
+               0 0 8px #ffffff, 
+               0 0 10px rgb(255, 255, 255);
+}
+body {
+  background-image: url("https://img.freepik.com/premium-vector/clouds-stars-sun-blue-background-childrens-vector-illustration-sky_153074-219.jpg");
+  background-size: cover;
+  opacity: 0.9;
+}
+#heading{
+    border-radius: 5px;
+    text-shadow: 1px 2px 10px white;
+}  
+#two {
+    border-radius: 5px;
+    background-color: #000;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #ebd8d0;
+    margin-left:20%;
+    margin-right: 20%;
+}
+
+.box {
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+}
+.box::before {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  content: '';
+  height: 10px;
+  position: absolute;
+  background: linear-gradient(180deg,rgb(54, 53, 53), rgba(255, 142, 113, 0));
+}
+.box::after {
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  content: '';
+  height: 10px;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(16, 116, 3, 0),rgb(54, 53, 53));
+}
+
+.box span {
+  float: left;
+}
+
+.box ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  -webkit-animation: scrollUp 6s ease-in-out infinite normal;
+          animation: scrollUp 6s ease-in-out infinite normal;
+}
+.box ul li {
+  opacity: 1;
+  height: 20px;
+  padding: 20px;
+  list-style: none;
+}
+
+@-webkit-keyframes scrollUp {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
+  }
+}
+
+@keyframes scrollUp {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
+  }
+}
+
+
+#card2{
+  background-color: rgb(114, 165, 185);
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("https://cdn.pixabay.com/photo/2020/05/17/20/21/drops-5183426_640.jpg");
+  transition: all 1s ease-out;
+}
+#card1{ 
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("https://media.istockphoto.com/id/1226639190/photo/sky-with-bright-sun-and-thermometer.webp?b=1&s=170667a&w=0&k=20&c=JfJ-LFSldUAjHlpsUJzVs5EcqoonFcloIsgy7ZSSQH8=");
+  transition: all 1s ease-out;
+}
+#card1:hover{
+  transform: scale(1.05); 
+  opacity: 1;
+} 
+#card2:hover{
+  transform: scale(1.05);
+  opacity: 1;
+} 
+#card3{
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("https://images.unsplash.com/photo-1663137728377-b7ea12b6c8cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdpbmR5JTIwd2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D");
+  transition: all 1s ease-out;
+} 
+#card3:hover{
+  transform: scale(1.05);
+  opacity: 1;
+} 
+td{
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5));
+}
+
+
